@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="service provides for moto">
+    <meta name="author" content="NNT, HVN, BVH">
+
+    <meta charset="utf-8">
+    <title>Home Page</title>
+
+    <script id="facebook-jssdk" src="js/sdk.js"></script>
+    <script src="js/jquery-1.js"></script>
+    <script src="js/divbox.js"></script>
+    <script src="js/me.php"></script>
+    <script src="js/jquery_003.js"></script>
+    <script src="js/swfobject.js"></script>
+    <script src="js/jquery_004.js"></script>
+    <script src="js/md5.js"></script>
+    <script src="js/jquery_005.js"></script>
+    <script src="js/owl.js"></script>
+
+    <link rel="stylesheet" href="css/customize.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/bxslider.css" type="text/css">
+    <link rel="stylesheet" href="css/divbox.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="css/global.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.css" type="text/css">
+    <script src="js/swfobject.js"></script>
+
+    <script src="js/responsiveslides.js"></script>
+    <script>
+    $(function () {
+      $("#slider").responsiveSlides({
+      	auto: true,
+      	nav: true,
+      	speed: 500,
+        namespace: "callbacks",
+        pager: true,
+      });
+    });
+    </script>
+    <script src="js/bootstrap.js"></script>
+  </head>
+  <body class="cbp-spmenu-push">
+    <div class="head_top header_admin">
+		<div class="bg_top">
+      <script>
+	      function jsupdate(k,idclass,jscolor) {
+	        if(k==0) 		$("."+idclass).css("background-color","#"+jscolor);
+	        else if (k==1)	$("."+idclass).css("color","#"+jscolor);
+	       }
+      </script>
+    </div>
+	  </div>
+    <div class="header">
+      <div class="container">
+        <div class="header-top">
+          <div class="logo">
+            <a href="index.html"> <img src="images/Honda-motorcycle-logo.png"  alt="logo" class="img_logo"> </a>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="header-right">
+            <div class="phone">
+              <div class="dv-lang">
+              </div>
+            <h5>
+              <a href="tel:(069)%201234%205678">
+                <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+                (069) 1234 5678
+              </a>
+              <a href="shop.html">
+                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                Cart (0)
+              </a>
+              <label class="lbl-search">
+                <input type="text" class="search_key" placeholder="Enter searching keywords">
+                <button onclick="SEARCH_btn()"> <i class="fa fa-search"></i> search </button>
+                <script type="text/javascript">
+                function SEARCH_btn() {
+                  var key = $(".search_key").val().replace(/ /g,"+");
+                    if(key.length < 2 || $(".search_key").val() == 'Enter searching keywords')
+                    {
+                        $(".search_key").focus();
+                    }
+                    else window.location.href = "product.html/?keysearch="+key;
+                }
+                $('.search_key').keypress(function(event){
+                  var keycode = (event.keyCode ? event.keyCode : event.which);
+                  if (keycode == '13') {
+                    SEARCH_btn();
+                  }
+                  });
+                </script>
+              </label>
+            </h5>
+            </div>
+            <div class="clear"></div>
+            <div class="header-bottom">
+              <div class="dv-menu menu_desktop" id="menu">
+                <ul class="nav navbar-nav cl-effect-16">
+                  <li class="active"> <a class="" href="index.html"> <span>Home Page</span> </a> </li>
+                  <li class=""> <a href="product.html"> <span>Products</span> </a>
+                  	<ul class="dl-submenu  ">
+                  		<li><a href="">» Honda</a></li>
+                  		<li><a href="">» Ducati </a></li>
+                  		<li><a href="">» Yamaha</a></li>
+                  	</ul>
+                  </li>
+                  <li class=""><a class="" href=""><span>Services</span></a></li>
+                  <li class=""><a class="" href=""><span>Contact</span></a></li>
+                </ul>
+              </div>
+              <script src="js/modernizr.js"></script>
+              <script src="js/jquery.js"></script>
+              <script>
+                $(function() {
+                  $( '#dl-menu' ).dlmenu();
+                });
+
+                $(document).ready(function(){
+                  $('body').click(function(e) {
+                        $('#dl-menu').dlmenu('closeMenu');
+                  });
+                });
+              </script>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <article>
+      <section class="content gallery pad1" style="padding:0">
+        <div class="midle_main_idclass fix1200_cus1">
+          <section class="slider2">
+            <div class="flexslider">
+              <div class="flex-viewport" style="overflow: hidden; position: relative;">
+                <ul class="slides" style="width: 1000%; transition-duration: 0s; transform: translate3d(-1352px, 0px, 0px);">
+                  <li class="clone" style="width: 1352px; float: left; display: block;">
+                    <div class="slider-info">
+                      <a href="#"> <img src="images/14894623206294_banner3.jpg" class="img-responsive" alt=""> </a>
+                    </div>
+                  </li>
+                  <li style="width: 1352px; float: left; display: block;" class="flex-active-slide">
+                    <div class="slider-info">
+                      <a href="#"> <img src="images/14894623183072_banner1.jpg" class="img-responsive" alt=""> </a>
+                    </div>
+                  </li>
+                  <li style="width: 1352px; float: left; display: block;">
+                    <div class="slider-info">
+                      <a href="#"> <img src="images/14894623197714_banner2.jpg" class="img-responsive" alt=""> </a>
+                    </div>
+                  </li>
+                  <li style="width: 1352px; float: left; display: block;">
+                    <div class="slider-info">
+                      <a href="#"> <img src="images/14894623206294_banner3.jpg" class="img-responsive" alt=""> </a>
+                    </div>
+                  </li>
+                  <li style="width: 1352px; float: left; display: block;" class="clone">
+                    <div class="slider-info">
+                      <a href="#"> <img src="images/14894623183072_banner1.jpg" class="img-responsive" alt=""> </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            <ol class="flex-control-nav flex-control-paging">
+              <li> <a class="flex-active">1</a> </li>
+              <li><a>2</a></li>
+              <li><a>3</a></li>
+            </ol>
+            <ul class="flex-direction-nav">
+              <li><a class="flex-prev" href="#">Previous</a></li>
+              <li><a class="flex-next" href="#">Next</a></li>
+            </ul>
+          </section>
+        </div>
+
+
+          <script defer="defer" src="js/jquery_002.js"></script>
+          <script type="text/javascript">
+                $(window).load(function(){
+                  $('.flexslider').flexslider({
+                  animation: "slide",
+                  start: function(slider){
+                    $('body').removeClass('loading');
+                  }
+                  });
+                });
+          </script>
+        </div>
+      </section>
+    </article>
+
+  </body>
+</html>
