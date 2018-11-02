@@ -3,4 +3,6 @@ Final web project for USTH web application
 
 Menber:
 
--1, Nguyen Ngoc Trung Bi-154
+- Nguyen Ngoc Trung USTHBi7-154
+- Huynh Vinh Nam USTHBi7-114
+- Bui Vu Huy USTHBi7-082
