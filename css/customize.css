@@ -31,6 +31,8 @@ input[type="button"] {
 }
 .logo {
   padding:15px 0px;
+  display: inline-block;
+  margin-right: 50px;
 }
 .logo img {
   height:70px;
