@@ -1,434 +1,369 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="keywords" content="">
-    <meta name="description" content="service provides for moto">
-    <meta name="author" content="NNT, HVN, BVH">
-    <link rel="shortcut icon" href="images/480px-LEGO_logo.svg.png">
 
-    <meta charset="utf-8">
-    <title>Home Page</title>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="keywords" content="">
+  <meta name="description" content="service provides for moto">
+  <meta name="author" content="NNT, HVN, BVH">
+  <link rel="shortcut icon" href="images/480px-LEGO_logo.svg.png">
 
-    <script src="js/jquery.bxslider.min.js"></script>
-    <script src="js/divbox.js"></script>
-    <script src="js/me.php"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.simple-lens.min.js"></script>
-    <script src="js/md5.js"></script>
-    <script src="js/jquery-1.8.2.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/swfobject.js"></script>
+  <meta charset="utf-8">
+  <title>Home Page</title>
 
-    <link rel="stylesheet" href="css/jquery.css" type="text/css">
-    <link rel="stylesheet" href="css/global.css" type="text/css">
-    <link rel="stylesheet" href="css/customize.css" type="text/css">
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/bxslider.css" type="text/css">
-    <link rel="stylesheet" href="css/divbox.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/divbox.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 
-    <script src="js/responsiveslides.min.js"></script>
-    <script>
-    $(function () {
-      $("#slider").responsiveSlides({
-      	auto: true,
-      	nav: true,
-      	speed: 500,
-        namespace: "callbacks",
-        pager: true,
-      });
-    });
-    </script>
-    <script src="js/bootstrap.js"></script>
-  </head>
-  <body class="cbp-spmenu-push">
-    <div class="head_top header_admin">
-		<div class="bg_top">
-      <script>
-	      function jsupdate(k,idclass,jscolor) {
-	        if(k==0) 		$("."+idclass).css("background-color","#"+jscolor);
-	        else if (k==1)	$("."+idclass).css("color","#"+jscolor);
-	       }
-      </script>
-    </div>
-	  </div>
-    <div class="header">
-      <div class="container">
-        <div class="header-top">
-          <div class="logo">
-            <a href="index.html"> <img src="images/Logo_TV_2015.png"  alt="logo" class="img_logo"> </a>
-          </div>
-          <div class="clearfix"></div>
+  <link rel="stylesheet" href="css/jquery.css" type="text/css">
+  <link rel="stylesheet" href="css/global.css" type="text/css">
+  <link rel="stylesheet" href="css/customize.css" type="text/css">
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="css/divbox.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body class="cbp-spmenu-push">
+  <div class="header">
+    <div class="container">
+      <div class="header-top">
+        <div class="logo">
+          <a href="index.html"> <img src="images/Logo_TV_2015.png" alt="logo" class="img_logo"> </a>
         </div>
-        <div class="header-right">
-            <div class="phone">
-              <div class="dv-lang">
-              </div>
-            <h5>
-              <a href="tel:(069)%201234%205678">
-                <span class="fa fa-mobile-phone" ></span>
-                (069) 1234 5678
-              </a>
-              <a href="shop.html">
-                <span class="fa fa-shopping-cart"></span>
-                Cart (0)
-              </a>
-              <label class="lbl-search">
-                <input type="text" class="search_key" placeholder="Enter searching keywords">
-                <button onclick="SEARCH_btn()"> <i class="fa fa-search"></i> search </button>
-                <script type="text/javascript">
-                function SEARCH_btn() {
-                  var key = $(".search_key").val().replace(/ /g,"+");
-                    if(key.length < 2 || $(".search_key").val() == 'Enter searching keywords')
-                    {
-                        $(".search_key").focus();
-                    }
-                    else window.location.href = "Moto_Web_Project/sanpham/?keysearch="+key;
-                }
-                $('.search_key').keypress(function(event){
-                  var keycode = (event.keyCode ? event.keyCode : event.which);
-                  if (keycode == '13') {
-                    SEARCH_btn();
-                  }
-                  });
-                </script>
-              </label>
-            </h5>
-            </div>
-            <div class="clear"></div>
-            <div class="header-bottom">
-              <div class="dv-menu menu_desktop" id="menu">
-                <ul class="nav navbar-nav cl-effect-16">
-                  <li class="active"> <a class="" href="index.html"> <span>Home Page</span> </a> </li>
-                  <li class=""> <a href="products.html"> <span>Products</span> </a>
-                  	<ul class="dl-submenu  ">
-                      <li><a href="products/honda.html">» Honda</a></li>
-                      <li><a href="products/ducati.html">» Ducati </a></li>
-                      <li><a href="products/yamaha.html">» Yamaha</a></li>
-                  	</ul>
-                  </li>
-                  <li class=""><a class="" href="services.html"><span>Services</span></a></li>
-                  <li class=""><a class="" href="contact.html"><span>Contact</span></a></li>
-                </ul>
-              </div>
-              <script src="js/modernizr.custom.js"></script>
-              <script src="js/jquery.dlmenu.js"></script>
-              <script>
-                $(function() {
-                  $( '#dl-menu' ).dlmenu();
-                });
+        <div class="clearfix"></div>
+      </div>
 
-                $(document).ready(function(){
-                  $('body').click(function(e) {
-                        $('#dl-menu').dlmenu('closeMenu');
-                  });
-                });
-              </script>
-            </div>
+
+      <div class="header-right">
+        <div class="phone">
+          <div class="dv-lang">
+          </div>
+          <h5>
+            <a href="tel:(069)%201234%205678">
+              <span class="fa fa-mobile-phone"></span>
+              (069) 1234 5678
+            </a>
+            <a href="shop.html">
+              <span class="fa fa-shopping-cart"></span>
+              Cart (0)
+            </a>
+            <label class="lbl-search">
+              <input type="text" class="search_key" placeholder="Enter searching keywords">
+              <button onclick="SEARCH_btn()"> <i class="fa fa-search"></i> search </button>
+            </label>
+          </h5>
+        </div>
+
+        <div class="clear"></div>
+        <div class="header-bottom">
+          <div class="dv-menu menu_desktop" id="menu">
+            <ul class="nav navbar-nav cl-effect-16">
+              <li class="active"> <a class="" href="index.html"> <span>Home Page</span> </a> </li>
+              <li class=""> <a href="products.html"> <span>Products</span> </a>
+                <ul class="dl-submenu  ">
+                  <li><a href="products/honda.html">» Honda</a></li>
+                  <li><a href="products/ducati.html">» Ducati </a></li>
+                  <li><a href="products/yamaha.html">» Yamaha</a></li>
+                </ul>
+              </li>
+              <li class=""><a class="" href="services.html"><span>Services</span></a></li>
+              <li class=""><a class="" href="contact.html"><span>Contact</span></a></li>
+            </ul>
+          </div>
+          <script src="js/modernizr.custom.js"></script>
+          <script src="js/jquery.dlmenu.js"></script>
+          <script>
+            $(function() {
+              $('#dl-menu').dlmenu();
+            });
+
+            $(document).ready(function() {
+              $('body').click(function(e) {
+                $('#dl-menu').dlmenu('closeMenu');
+              });
+            });
+          </script>
         </div>
       </div>
+
+
     </div>
+  </div>
 
-    <article>
-      <section class="content gallery pad1" style="padding:0">
-        <div class="midle_main_idclass fix1200_cus1">
-          <section class="slider2">
-            <div class="flexslider">
-              <div class="flex-viewport" style="overflow: hidden; position: relative;">
-                <ul class="slides" style="width: 1000%; transition-duration: 0s; transform: translate3d(-1352px, 0px, 0px);">
-                  <li class="clone" style="width: 1352px; float: left; display: block;">
-                    <div class="slider-info">
-                      <a href="#"> <img src="images/honda-moto-1.jpg" class="img-responsive" alt=""> </a>
-                    </div>
-                  </li>
-                  <li style="width: 1352px; float: left; display: block;" class="flex-active-slide">
-                    <div class="slider-info">
-                      <a href="#"> <img src="images/honda-moto-2.jpg" class="img-responsive" alt=""> </a>
-                    </div>
-                  </li>
-                  <li style="width: 1352px; float: left; display: block;">
-                    <div class="slider-info">
-                      <a href="#"> <img src="images/honda-moto-3.jpg" class="img-responsive" alt=""> </a>
-                    </div>
-                  </li>
-                  <li style="width: 1352px; float: left; display: block;">
-                    <div class="slider-info">
-                      <a href="#"> <img src="images/honda-moto-1.jpg" class="img-responsive" alt=""> </a>
-                    </div>
-                  </li>
-                  <li style="width: 1352px; float: left; display: block;" class="clone">
-                    <div class="slider-info">
-                      <a href="#"> <img src="images/honda-moto-2.jpg" class="img-responsive" alt=""> </a>
-                    </div>
-                  </li>
-                </ul>
+  <article>
+    <section class="content gallery pad1" style="padding:0">
+      <div class="content">
+        <div class="welcome">
+          <div class="container">
+            <div class="welcome-grids">
+              <div class="col-md-6 col-sm-6 col-xs-12 welcome-grid">
+                <img src="images/honda-moto-1.jpg" class="img-responsive" alt="Welcome to the motorcycle repairing services HVN">
               </div>
-            <ol class="flex-control-nav flex-control-paging">
-              <li> <a class="flex-active">1</a> </li>
-              <li><a>2</a></li>
-              <li><a>3</a></li>
-            </ol>
-            <ul class="flex-direction-nav">
-              <li><a class="flex-prev" href="#">Previous</a></li>
-              <li><a class="flex-next" href="#">Next</a></li>
-            </ul>
-          </section>
-        </div>
-
-
-          <script defer="defer" src="js/jquery.flexslider.js"></script>
-          <script type="text/javascript">
-                $(window).load(function(){
-                  $('.flexslider').flexslider({
-                  animation: "slide",
-                  start: function(slider){
-                    $('body').removeClass('loading');
-                  }
-                  });
-                });
-          </script>
-
-          <div class="content">
-            <div class="welcome">
-              <div class="container">
-                <div class="welcome-grids">
-                  <div class="col-md-6 col-sm-6 col-xs-12 welcome-grid">
-                    <img src="images/39400718_1096937653823490_8219217264394633216_n.jpg" class="img-responsive" alt="Welcome to the motorcycle repairing services HVN">
-                  </div>
-                  <div class="col-md-6 col-sm-6 col-xs-12 welcome-grid1">
-                    <h2>Welcome to the motorcycle repairing services HVN</h2>
-                    <div class="nd">
-                      <p>with something somwthing</p>
-                    </div>
-                    <a href="intro.html" class="button_watch">Click Here for more info</a>
-                  </div>
-                  <div class="clearfix"></div>
+              <div class="col-md-6 col-sm-6 col-xs-12 welcome-grid1">
+                <h2>Welcome to the motorcycle repairing services d4rtduck</h2>
+                <div class="nd">
+                  <p>Book your services now</p>
                 </div>
+                <a href="booking.html" class="button_watch">Click Here for more info</a>
               </div>
+              <div class="clearfix"></div>
             </div>
-
-            <div class="slider1">
-              <div class="dv-owl-demo">
-                <link rel="stylesheet" href="css/owl.css" />
-                <script src="js/owl.carousel.js"></script>
-                <div id="owl-demo-km" class="owl-carousel">
-                          <div class='item'>
-                      <div class='content-left-top'>
-                          <div class='dv-spmoi'>
-                              <a href='#'><img class='img-responsive' src='images/541c5363f3ae5934dae09af6e4b290c1.png' alt='mở rộng 1 - không xài'></a>
-                          </div>
-                      </div>
-                  </div>
-                          <div class='item'>
-                      <div class='content-left-top'>
-                          <div class='dv-spmoi'>
-                              <a href='#'><img class='img-responsive' src='images/162974-anime-anime-girls-date-a-live-izayoi-miku-tokisaki-kurumi-yoshino-date-a-live.jpg' alt='mở rộng 1 - không xài'></a>
-                          </div>
-                      </div>
-                  </div>
-                          <div class='item'>
-                      <div class='content-left-top'>
-                          <div class='dv-spmoi'>
-                              <a href='#'><img class='img-responsive' src='images/795273.png' alt='mở rộng 1 - không xài'></a>
-                          </div>
-                      </div>
-                  </div>
-                          <div class='item'>
-                      <div class='content-left-top'>
-                          <div class='dv-spmoi'>
-                              <a href='h.html'><img class='img-responsive' src='images/11075266_473089906180937_8988559528688423707_o.jpg' alt=''></a>
-                          </div>
-                      </div>
-                  </div>
-                          <div class='item'>
-                      <div class='content-left-top'>
-                          <div class='dv-spmoi'>
-                              <a href='hh.html'><img class='img-responsive' src='images/DAL_v16_02.jpg' alt=''></a>
-                          </div>
-                      </div>
-                  </div>
-                          <div class='item'>
-                      <div class='content-left-top'>
-                          <div class='dv-spmoi'>
-                              <a href='hhh.html'><img class='img-responsive' src='images/15747703_1063540933771443_5090622715862279127_n.jpg' alt=''></a>
-                          </div>
-                      </div>
-                  </div>
-
-                </div>
-              </div>
-              <script>
-                  $(document).ready(function() {
-                    $("#owl-demo-km").owlCarousel({
-                        itemsCustom : [
-                              [0, 1],
-                              [450, 2],
-                              [600, 2],
-                              [700, 3],
-                              [991, 3],
-                              [1200, 4],
-                              [1400, 5],
-                              [1600, 6],
-                              [1800, 7],
-                              [2000, 8]
-                            ],
-                            navigation : true,
-                            navigationText : ["<img src='images/img-sprite-left.png'>","<img src='images/img-sprite-right.png'>"],
-                            autoPlay: true,
-
-                    });
-                  });
-              </script>
-            </div>
-
-            <div class="feature">
-              <div class="container">
-                <h3>Products</h3>
-                <div class="feature-grids">
-                  <div class="row">
-                    <div class="col-md-3 col-sm-4 col-xs-6 col-min-12">
-                      <div class="dv-product">
-                        <a href="#"> <img src="images/39726256_1100621966788392_2945591818315628544_n.jpg" alt=""> </a>
-                        <h4> <a href="#"> something</a> </h4>
-                        <div class="original-price"></div>
-                        <div class="price">Contact us for more info</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-              </div>
-              <div class="container">
-                <h3>Services</h3>
-                <div class="feature-grids">
-                  <div class="row">
-                    <div class="col-md-3 col-sm-4 col-xs-6 col-min-12">
-                      <div class="dv-product">
-                        <a href="#"> <img src="images/39726256_1100621966788392_2945591818315628544_n.jpg" alt=""> </a>
-                        <h4> <a href="#"> something</a> </h4>
-                        <div class="original-price"></div>
-                        <div class="price">Contact us for more info</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="testimonials" style="background: url('images/15747703_1063540933771443_5090622715862279127_n.jpg') no-repeat 0px 0px fixed;">
-              <div class="container">
-                <h3>Customer Opinions</h3>
-                <div class="slider">
-                  <div class="callbacks_container">
-                    <ul class="rslides" id="slider">
-                      <li>
-                        <p>1-Thank you for choosing our services.</p>
-                        <h4> <a href="survey.html">Mr Nam</a></h4>
-                      </li>
-                      <li>
-                        <p>2-Thank you for choosing our services.</p>
-                        <h4><a href="survey.html">Mr Huy</a></h4>
-                      </li>
-                      <li>
-                        <p>3-Thank you for choosing our services.</p>
-                        <h4><a href="survey.html">Mr Trung</a></h4>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
         </div>
-      </section>
-    </article>
+
+        <div id="second-section" class="background-gray">
+          <div class="second-section">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                  <div class="container-column">
+                    <img class="icon" src="images/icon-easy-47c13d6dcacaa69bea11f7f20bfeeb55.svg">
+                    <h5 class="text-dark-gray">WE MAKE IT EASY</h5>
+                    <p class="text-gray">Book a services online 24/7, and our mechanic will come to your place even on weekends</p>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                  <div class="container-column">
+                    <img class="icon" src="images/icon-pricing-3c7b4a919e3a18e6cdd92acbfad1b2a4.svg">
+                    <h5 class="text-dark-gray">FAIR AND TRANSPARENT PRICING</h5>
+                    <p class="text-gray">We offer fair and transparent pricing and provide estimates upfront for hundreds of services on thousands of cars. Book with confidence.</p>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                  <div class="container-column">
+                    <img class="icon" src="images/icon-shield-85a3db2fcea7ced728cdc09be095ed2e.svg">
+                    <h5 class="text-dark-gray">HAPPINESS GUARANTEED</h5>
+                    <p class="text-gray">We only work with highly rated mechanics. <br>
+                      All services are backed by our 12-month / 12,000-mile warranty.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="feature">
+          <div class="container">
+            <h3>Products</h3>
+            <div class="feature-grids">
+              <div class="row">
+                <div class="col-md-3 col-sm-4 col-xs-6 col-min-12">
+                  <div class="dv-product">
+                    <a href="#"> <img src="images/39726256_1100621966788392_2945591818315628544_n.jpg" alt=""> </a>
+                    <h4> <a href="#"> something</a> </h4>
+                    <div class="original-price"></div>
+                    <div class="price">Contact us for more info</div>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="container">
+            <h3>Services</h3>
+            <div class="section-padding">
+              <div class="services-section">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12 text-center text-space">
+                      <h2 class="g-header-text">Get over 100 moto repair serivces</h2>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                      <div class="text-center"></div>
+                      <div class="shadow-box-fill jobs-list">
+                        <ul>
+                          <a href="services/something">
+                            <li>something</li>
+                          </a>
+                          <a href="services/something">
+                            <li>something</li>
+                          </a>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4">
+                      <div class="text-center"></div>
+                      <div class="shadow-box-fill jobs-list">
+                        <ul>
+                          <a href="services/something">
+                            <li>something</li>
+                          </a>
+                          <a href="services/something">
+                            <li>something</li>
+                          </a>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4">
+                      <div class="text-center"></div>
+                      <div class="shadow-box-fill jobs-list">
+                        <ul>
+                          <a href="services/something">
+                            <li>something</li>
+                          </a>
+                          <a href="services/something">
+                            <li>something</li>
+                          </a>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row row-centered">
+                    <div class="col-lg-4 col-md-4 col-centered">
+                      <a class="btn-gray-stroke" href="services">see all services</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-padding background-gray">
+          <div class="section-makes">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 text-center text-space">
+                  <h2 class="g-header-text">We services most moto models</h2>
+                </div>
+              </div>
+              <div class="row home-moto-logos">
+                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 text-center">
+                  <div class="image-space">
+                    <img class="center-vertical brands" src="images/Honda-motorcycle-logo.png">
+                  </div>
+                  <a class="btn-gray-stroke-small" href="">Honda</a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 text-center">
+                  <div class="image-space">
+                    <img class="center-vertical brands" src="images/Le-Logo-Yamaha.png">
+                  </div>
+                  <a class="btn-gray-stroke-small" href="">Yamaha</a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 text-center">
+                  <div class="image-space">
+                    <img class="center-vertical brands" src="images/ducati-logo-256EB5E75F-seeklogo.com.png">
+                  </div>
+                  <a class="btn-gray-stroke-small" href="">Ducati</a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 text-center">
+                  <div class="image-space">
+                    <img class="center-vertical brands" src="images/l11442-suzuki-eps-logo-73575.png">
+                  </div>
+                  <a class="btn-gray-stroke-small" href="">Suzuki</a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 text-center">
+                  <div class="image-space">
+                    <img class="center-vertical brands" src="images/">
+                  </div>
+                  <a class="btn-gray-stroke-small" href="">Kawasaki</a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 text-center">
+                  <div class="image-space">
+                    <img class="center-vertical brands" src="images/piaggio-emblem-logo-5F30924FFE-seeklogo.com.png">
+                  </div>
+                  <a class="btn-gray-stroke-small" href="">Piaggio</a>
+                </div>
+
+              </div>
+              <div class="row row-centered">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-padding background-dark-blue">
+          <div class="section-questions">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 col-centered text-center">
+                  <h2 class="g-header-text text-white">How can we help</h2>
+                  <p class="text-white">Our services team is available 7 days a week, Monday - Friday from 6 AM to 6 PM, Saturaday - Sunday from 7 AM to 4 PM</p>
+
+                </div>
+              </div>
+              <div class="row row-centered">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </article>
 
 
 
-    <div class="content">
+  <div class="content">
     <div class="specials-section">
       <div class="container">
         <div class="specials-grids">
           <div class="row">
             <div class="col-md-3 col-sm-6 col-xs-6 col-min-12 specials footer-h1">
               <h3>Introduction</h3>
-                <ul class='nav-bottom navi_bottom  navi_bottom_cus1'>
-                  <li class='li_bottom li_bottom_cus1'>
-                    <i class='' aria-hidden='true'></i>
-                    <a class='a_navi_bottom a_navi_bottom_cus1' href=''>about us</a>
-                  </li>
-                  <li class='li_bottom li_bottom_cus1'>
-                    <i class='' aria-hidden='true'></i>
-                    <a class='a_navi_bottom a_navi_bottom_cus1' href=''>history</a>
-                  </li>
-                  <li class='li_bottom li_bottom_cus1'>
-                    <i class='' aria-hidden='true'></i>
-                    <a class='a_navi_bottom a_navi_bottom_cus1' href=''>vision</a>
-                  </li>
-                  <li class='li_bottom li_bottom_cus1'>
-                     <i class='' aria-hidden='true'></i>
-                     <a class='a_navi_bottom a_navi_bottom_cus1' href=''>partner</a>
-                   </li>
-                   <li class='li_bottom li_bottom_cus1'>
-                     <i class='' aria-hidden='true'></i>
-                     <a class='a_navi_bottom a_navi_bottom_cus1' href=''>other</a>
-                   </li>
-                 </ul>
+              <ul class='nav-bottom navi_bottom  navi_bottom_cus1'>
+                <li class='li_bottom li_bottom_cus1'>
+                  <i class='' aria-hidden='true'></i>
+                  <a class='a_navi_bottom a_navi_bottom_cus1' href=''>about us</a>
+                </li>
+                <li class='li_bottom li_bottom_cus1'>
+                  <i class='' aria-hidden='true'></i>
+                  <a class='a_navi_bottom a_navi_bottom_cus1' href=''>history</a>
+                </li>
+                <li class='li_bottom li_bottom_cus1'>
+                  <i class='' aria-hidden='true'></i>
+                  <a class='a_navi_bottom a_navi_bottom_cus1' href=''>city</a>
+                </li>
+                <li class='li_bottom li_bottom_cus1'>
+                  <i class='' aria-hidden='true'></i>
+                  <a class='a_navi_bottom a_navi_bottom_cus1' href=''>partner</a>
+                </li>
+                <li class='li_bottom li_bottom_cus1'>
+                  <i class='' aria-hidden='true'></i>
+                  <a class='a_navi_bottom a_navi_bottom_cus1' href=''>other</a>
+                </li>
+              </ul>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-6 col-min-12 specials footer-h2">
               <h3>Services</h3>
-              <ul class='nav-bottom navi_bottom  navi_bottom_cus1'><li class='li_bottom li_bottom_cus1'>
-                <i class='' aria-hidden='true'></i>
-                <a class='a_navi_bottom a_navi_bottom_cus1' href=''>about us</a>
-              </li>
-              <li class='li_bottom li_bottom_cus1'>
-                <i class='' aria-hidden='true'></i>
-                <a class='a_navi_bottom a_navi_bottom_cus1' href=''>history</a>
-              </li>
-              <li class='li_bottom li_bottom_cus1'>
-                <i class='' aria-hidden='true'></i>
-                <a class='a_navi_bottom a_navi_bottom_cus1' href=''>vision</a>
-              </li>
-              <li class='li_bottom li_bottom_cus1'>
-                 <i class='' aria-hidden='true'></i>
-                 <a class='a_navi_bottom a_navi_bottom_cus1' href=''>partner</a>
-               </li>
-               <li class='li_bottom li_bottom_cus1'>
-                 <i class='' aria-hidden='true'></i>
-                 <a class='a_navi_bottom a_navi_bottom_cus1' href=''>other</a>
-               </li>
-             </ul>
-           </div>
+              <ul class='nav-bottom navi_bottom  navi_bottom_cus1'>
+                <li class='li_bottom li_bottom_cus1'>
+                  <i class='' aria-hidden='true'></i>
+                  <a class='a_navi_bottom a_navi_bottom_cus1' href=''>about us</a>
+                </li>
+                <li class='li_bottom li_bottom_cus1'>
+                  <i class='' aria-hidden='true'></i>
+                  <a class='a_navi_bottom a_navi_bottom_cus1' href=''>history</a>
+                </li>
+                <li class='li_bottom li_bottom_cus1'>
+                  <i class='' aria-hidden='true'></i>
+                  <a class='a_navi_bottom a_navi_bottom_cus1' href=''>vision</a>
+                </li>
+                <li class='li_bottom li_bottom_cus1'>
+                  <i class='' aria-hidden='true'></i>
+                  <a class='a_navi_bottom a_navi_bottom_cus1' href=''>partner</a>
+                </li>
+                <li class='li_bottom li_bottom_cus1'>
+                  <i class='' aria-hidden='true'></i>
+                  <a class='a_navi_bottom a_navi_bottom_cus1' href=''>other</a>
+                </li>
+              </ul>
+            </div>
             <div class="col-md-3 col-sm-6 col-xs-6 col-min-12 specials footer-h3">
-              <h3>Informations</h3>
-              <ul class='nav-bottom navi_bottom  navi_bottom_cus1'><li class='li_bottom li_bottom_cus1'>
-                <i class='' aria-hidden='true'></i>
-                <a class='a_navi_bottom a_navi_bottom_cus1' href=''>about us</a>
-              </li>
-              <li class='li_bottom li_bottom_cus1'>
-                <i class='' aria-hidden='true'></i>
-                <a class='a_navi_bottom a_navi_bottom_cus1' href=''>history</a>
-              </li>
-              <li class='li_bottom li_bottom_cus1'>
-                <i class='' aria-hidden='true'></i>
-                <a class='a_navi_bottom a_navi_bottom_cus1' href=''>vision</a>
-              </li>
-              <li class='li_bottom li_bottom_cus1'>
-                 <i class='' aria-hidden='true'></i>
-                 <a class='a_navi_bottom a_navi_bottom_cus1' href=''>partner</a>
-               </li>
-               <li class='li_bottom li_bottom_cus1'>
-                 <i class='' aria-hidden='true'></i>
-                 <a class='a_navi_bottom a_navi_bottom_cus1' href=''>other</a>
-               </li>
-             </ul>
-           </div>
-            <div class="col-md-3 col-sm-6 col-xs-6 col-min-12 specials footer-h4">
               <h3>HVN moto</h3>
               <div class="nd">
                 <p>18 Hoang Quoc Viet, Q.Ba Dinh TP. Ha Noi</p>
@@ -441,19 +376,9 @@
           <div class="clearfix"></div>
         </div>
       </div>
-      <div class="container">
-        <div class="col-md-3 col-sm-6 col-xs-6 col-min-12 specials footer-h5">
-          <div class="logo">
-            <img src="images/Logo_TV_2015.png" alt="">
-          </div>
-          <div class="logo">
-            <img src="images/Logo_TV_2015.png" alt="">
-          </div>
-          </div>
-        </div>
 
-      </div>
     </div>
+  </div>
   </div>
 
   <script type="text/javascript">
@@ -464,21 +389,47 @@
       var h_4 = $(".footer-h4").height();
       var max_1 = h_1;
       var max_2 = h_3;
-      if(h_1   < h_2) max_1 = h_2;
-      if(h_3 < h_4) max_2 = h_4;
+      if (h_1 < h_2) max_1 = h_2;
+      if (h_3 < h_4) max_2 = h_4;
 
-      var w_document    = $(window).width();
-      if(w_document > 479 && w_document < 992)
-      {
-        if(max_1     != 0){ $(".footer-h1").height(max_1); $(".footer-h2").height(max_1);}
-        if(max_2     != 0){ $(".footer-h3").height(max_2); $(".footer-h4").height(max_2);}
+      var w_document = $(window).width();
+      if (w_document > 479 && w_document < 992) {
+        if (max_1 != 0) {
+          $(".footer-h1").height(max_1);
+          $(".footer-h2").height(max_1);
+        }
+        if (max_2 != 0) {
+          $(".footer-h3").height(max_2);
+          $(".footer-h4").height(max_2);
+        }
       }
     });
   </script>
-  <p id="back-top" style="display: block;"><a href="#top"><span>TOP</span></a></p><script type="text/javascript">$(document).ready(function(){  $("#back-top").hide(); $(function () { $(window).scroll(function () { if ($(this).scrollTop() > 100) { $('#back-top').fadeIn(); } else { $('#back-top').fadeOut(); } }); $('#back-top a').click(function () { $('body,html').animate({ scrollTop: 0 }, 800); return false; }); });});</script><script>
-      if ($('a.lightbox').length > 0) {
-          $('a.lightbox').divbox();
-      }
+  <p id="back-top" style="display: block;"><a href="#top"><span>TOP</span></a></p>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#back-top").hide();
+      $(function() {
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 100) {
+            $('#back-top').fadeIn();
+          } else {
+            $('#back-top').fadeOut();
+          }
+        });
+        $('#back-top a').click(function() {
+          $('body,html').animate({
+            scrollTop: 0
+          }, 800);
+          return false;
+        });
+      });
+    });
+  </script>
+  <script>
+    if ($('a.lightbox').length > 0) {
+      $('a.lightbox').divbox();
+    }
   </script>
 
 
@@ -488,5 +439,6 @@
 
 
 
-  </body>
+</body>
+
 </html>
