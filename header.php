@@ -56,7 +56,7 @@
                 </ul>
               </li>
               <li class=""><a class="" href="services.html"><span>Services</span></a></li>
-              <li class=""><a class="" href="repair.php"><span>repair</span></a></li>
+              <li class=""><a class="" href="repair.php"><span>Repair</span></a></li>
             </ul>
           </div>
           <script src="js/jquery.dlmenu.js"></script>

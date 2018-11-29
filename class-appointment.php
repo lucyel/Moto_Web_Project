@@ -44,8 +44,8 @@ class NntAppointment {
     public function displayAppointmentStatus() {
         $resultRow = $this->appointmentStatusResults[0];
         $appointmentStartTime = date('j M Y, H:i:s', $resultRow['customerAppointmentStartTime']);
-        
-        $resultTable = '<div class="ap-status><table id="appointment-status"><tr><th colspan="2" style="text-align: center;">Appointment Status</th></tr>';
+
+        $resultTable = '<div class="ap-status"><table id="appointment-status"><tr><th colspan="2" style="text-align: center;">Appointment Status</th></tr>';
         $resultTable .= "<tr><th scope=\"row\">Customer name</th><td>{$resultRow['customerName']}</td></tr>";
         $resultTable .= "<tr><th scope=\"row\">Contact number</th><td>{$resultRow['customerPhoneNumber']}</td></tr>";
         $resultTable .= "<tr><th scope=\"row\">Appointment start time</th><td>$appointmentStartTime</td></tr>";

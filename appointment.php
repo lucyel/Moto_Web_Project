@@ -51,6 +51,13 @@
 						</div>
 						<input type="submit" value="Submit">
 						</form>
+
+						 <form id="check-appointment-status" method="post" action="process-appointment.php">
+    <h1>Already registered? Check your appointment status</h1>
+    <label for="appointmentstatus">Enter your registered ID</label>
+    <input id="appointmentstatus" type="text" name="customerID" required />
+    <input type="submit" value="Check status" />
+  </form>
 					</div>
 				</div>
 			</div>
